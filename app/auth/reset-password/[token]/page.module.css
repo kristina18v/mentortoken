@@ -1,0 +1,31 @@
+.page { min-height: 100svh; }
+.panel .title { margin-top: 56px; font-size: 34px; line-height: 42px; }
+.description { margin-top: 20px; color: #8592a3; font-size: 17px; line-height: 28px; }
+.panel .form { margin-top: 36px; }
+.field { margin-top: 24px; }
+.field:first-child { margin-top: 0; }
+.field > label { display: block; margin-bottom: 10px; color: #566a7f; font-size: 15px; line-height: 22px; }
+.passwordInput { position: relative; }
+.passwordInput input { padding-right: 82px; }
+.toggle { position: absolute; top: 9px; right: 9px; min-height: 44px; padding: 0 12px; border: 0; border-radius: 6px; background: transparent; color: #696cff; font: inherit; font-size: 14px; cursor: pointer; }
+.toggle:disabled { cursor: wait; }
+.guidance { margin-top: 14px; color: #8592a3; font-size: 13px; line-height: 21px; }
+.guidance p + p { margin-top: 4px; }
+.strength { height: 4px; margin-bottom: 10px; overflow: hidden; border-radius: 4px; background: #ededf8; }
+.strength span { display: block; width: 0; height: 100%; border-radius: inherit; }
+.strength[data-strength='weak'] span { width: 33%; background: #b47832; }
+.strength[data-strength='good'] span { width: 66%; background: #696cff; }
+.strength[data-strength='strong'] span { width: 100%; background: #348164; }
+.panel .submit { margin-top: 32px; }
+.notice { margin-top: 24px; padding: 16px; border: 1px solid; border-radius: 10px; font-size: 15px; line-height: 25px; overflow-wrap: anywhere; }
+.error { color: #a52b28; border-color: #f1d0ce; background: #fff6f5; }
+.notice a { display: inline-block; margin-top: 8px; color: #696cff; text-decoration: underline; }
+.back { margin-top: 28px; color: #696cff; font-size: 16px; line-height: 24px; text-align: center; }
+.back a { display: inline-block; padding: 4px; }
+.successPanel { margin-top: 36px; }
+.successIcon { display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; margin-bottom: 24px; border-radius: 50%; color: #696cff; background: #f0efff; font-size: 32px; }
+.successPanel h2 { margin-bottom: 16px; color: #566a7f; font-size: 22px; line-height: 30px; font-weight: 500; }
+.successPanel p { color: #8592a3; font-size: 16px; line-height: 27px; }
+.panel .loginButton { display: flex; align-items: center; justify-content: center; margin-top: 32px; }
+@media (max-width: 800px) { .panel .title { margin-top: 32px; font-size: 30px; line-height: 38px; } }
+@media (max-width: 480px) { .panel .title { font-size: 28px; line-height: 36px; } .description { font-size: 16px; line-height: 26px; } .notice { padding: 14px; font-size: 14px; } .toggle { top: 7px; } }

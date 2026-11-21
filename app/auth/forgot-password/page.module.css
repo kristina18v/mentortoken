@@ -1,0 +1,14 @@
+.page { min-height: 100svh; }
+.panel .title { margin-top: 56px; font-size: 34px; line-height: 42px; }
+.description { margin-top: 20px; color: #8592a3; font-size: 17px; line-height: 28px; }
+.panel .form { margin-top: 48px; }
+.panel .submit { margin-top: 32px; }
+.notice { display: flex; align-items: flex-start; gap: 12px; margin-top: 24px; padding: 16px; border: 1px solid; border-radius: 10px; font-size: 15px; line-height: 25px; overflow-wrap: anywhere; }
+.success { color: #28634e; border-color: #cde9db; background: #f0faf5; }
+.error { color: #a52b28; border-color: #f1d0ce; background: #fff6f5; }
+.check { display: flex; align-items: center; justify-content: center; flex: 0 0 24px; height: 24px; border-radius: 50%; background: #dcefe4; font-weight: bold; }
+.back { margin-top: 30px; color: #696cff; font-size: 16px; line-height: 24px; text-align: center; }
+.back a { display: inline-block; padding: 4px; }
+.note { margin-top: 18px; color: #8592a3; font-size: 13px; line-height: 22px; text-align: center; }
+@media (max-width: 800px) { .panel .title { margin-top: 32px; font-size: 30px; line-height: 38px; } .panel .form { margin-top: 36px; } }
+@media (max-width: 480px) { .panel .title { font-size: 28px; line-height: 36px; } .description { font-size: 16px; line-height: 26px; } .notice { padding: 14px; font-size: 14px; } }

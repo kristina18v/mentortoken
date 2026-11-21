@@ -47,3 +47,39 @@ a {
     color-scheme: dark;
   }
 }
+
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+  --app-bg: #f7f8fc;
+  --app-card: #ffffff;
+  --app-text: #18213b;
+  --app-muted: #8490a6;
+  --app-border: #e9eaf1;
+  --app-input: #ffffff;
+  --app-selected: #f6f4ff;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --app-bg: #101421;
+  --app-card: #1b2233;
+  --app-text: #f0f3fb;
+  --app-muted: #a3aec2;
+  --app-border: #30394d;
+  --app-input: #232c3e;
+  --app-selected: #2c2950;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="system"] {
+    color-scheme: dark;
+    --app-bg: #101421;
+    --app-card: #1b2233;
+    --app-text: #f0f3fb;
+    --app-muted: #a3aec2;
+    --app-border: #30394d;
+    --app-input: #232c3e;
+    --app-selected: #2c2950;
+  }
+}
